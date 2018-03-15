@@ -1,0 +1,16 @@
+package: github.com/Infra-Red/cf-postgresql-smoke-tests
+import:
+- package: github.com/onsi/ginkgo
+  subpackages:
+  - config
+  - types
+  - ginkgo
+- package: github.com/onsi/gomega
+  subpackages:
+  - gexec
+- package: github.com/pivotal-cf-experimental/cf-test-helpers
+  subpackages:
+  - cf
+  - runner
+testImport:
+- package: github.com/pborman/uuid
